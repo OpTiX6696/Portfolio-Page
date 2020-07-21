@@ -1,0 +1,243 @@
+:root {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #45567d;
+    font-family: 'Ubuntu', serif;
+}
+div#home-img {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    z-index: -10;
+}
+div#home-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+nav#navbar {
+    /* border: 2px solid red; */
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+}
+nav ul {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+nav ul li {
+    padding-right: 30px;
+    color: rgb(36, 35, 35);
+    font-size: 20px;
+}
+
+
+div#welcome-section {
+    margin-top: 55px;
+    height: calc(100vh - 50px);
+    text-align: center;
+    font-size: 150%;
+    background-color: rgba(5, 5, 5, 0.54);
+    color: white;
+    text-shadow: 0.5px 1px 7px grey;
+    font-size: 200%;
+}
+div#welcome-section header h1 {
+    /* border: 2px solid red; */
+    padding-top: 30vh;
+    font-family: 'Overlock SC','El Messiri', serif;
+    font-weight: 700;
+}
+div#welcome-section p {
+    color: rgb(224, 219, 219);
+    font-family: 'Arima Madurai', serif;
+    font-weight: 100;
+}
+label[for="projects"] h2 {
+    /* border: 2px solid grey; */
+    margin: 10px auto;
+    text-align: center;
+    width: 80%;
+    padding: 15px 10px;
+    border-bottom: 2px solid grey;
+    font-family: 'Amita', serif;
+}
+div#projects-space {
+    /* border: 2px solid green; */
+    background-color: white;
+    /* margin: 0 auto; */
+    padding: 5px 0 30px;
+    color: rgb(36, 35, 35);
+    font-size: 120%;
+}
+div#projects {
+    /* border: 2px solid red; */
+    /* background-color: #45567d8e; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-family: ;
+}
+div.project-title {
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 1px 1px grey;
+
+    width: 90%;
+    max-width: 700px;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 35px;
+}
+div.project-title img {
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    background-color: white;
+}
+div.project-title h3 {
+    /* border: 2px solid green; */
+    margin: -5px auto 0;
+    line-height: 50px;
+    height: 50px;
+    background-color: rgb(42, 4, 46);
+    color: white;
+}
+div#more-projects {
+    border: 2px solid red;
+    margin: 0 auto;
+    /* height: 30px; */
+    width: fit-content;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+    border: 2px solid green;
+    /* background-color: #010913; */
+    background-color: rgb(34, 5, 5);
+    text-align: center;
+    margin: 0 auto;
+    height: calc(100vh - 50px);
+    color: white;
+    font-size: 100%;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer h2 {
+    /* border: 2px solid red; */
+    padding-top: 5vh;
+    font-family: 'Arima Madurai', serif;
+    font-weight: 300;
+    /* font-size: 150%; */
+}
+footer h4 {
+    margin: 0 auto;
+    width: auto;
+    /* border: 2px solid red; */
+    font-family: 'Galada', 'Meie Script', 'El Messiri', serif;
+    font-size: 140%;
+    /* font-weight: 300; */
+}
+/* div#drink {
+    display: flex;
+
+} */
+div#drink img {
+    width: 40px;
+    height: 40px;
+}
+
+
+div#profile-links {
+    /* border: 2px solid green; */
+    padding: 10px 10%;
+    margin-top: 5vh;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.p-link {
+    /* border: 2px solid red; */
+    /* margin-right: 5px; */
+    margin: 5px 5px;
+    font-size: 20px;
+    padding: 5px;
+    /* padding-top: 30px; */
+    font-family: 'Arima Madurai','Ubuntu', serif;
+    font-weight: 400;
+}
+div.p-link img {
+    min-width: 30px;
+    max-width: 80px;
+    width: 20%;
+    height: 30px;
+    margin-right: 5px;
+}
+.nav-btn {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: 0.5s ease;
+}
+div#copyright {
+    /* border: 2px solid green; */
+    font-size: 150%;
+    font-weight: lighter;
+    text-align: center;
+}
+.nav-btn:hover {
+    transform: scale(1.05) translate(0, 10px);
+    transition: 0.5s ease;
+    /* translate: 5px 10px; */
+}
+/* div.p-link img:hover {
+    transform: rotate(30deg);
+} */
+
+/**************************************
+    MEDIA QUERY
+**************************************/
+@media screen and (min-width: 724px) {
+    div.project-title {
+        /* border: 1px solid black; */
+        width: 40%;
+        
+    }
+}
